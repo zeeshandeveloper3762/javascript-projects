@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: black;
+      }
+      h1 {
+        display: flex;
+        justify-content: center;
+        color: white;
+      }
+
+      .main {
+        width: 100%;
+        height: 80vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .button {
+        /* border: 1px solid green; */
+        width: 20%;
+        height: 100px;
+        margin: 5px;
+      }
+      :hover.button {
+        cursor: pointer;
+        border: 5px solid skyblue;
+      }
+      #grey {
+        background-color: grey;
+      }
+      #red {
+        background-color: red;
+      }
+      #yellowgreen {
+        background-color: yellowgreen;
+      }
+      #blue {
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>color theme swither</h1>
+    <div class="main">
+      <span class="button" id="grey"></span>
+      <span class="button" id="red"></span>
+      <span class="button" id="yellowgreen"></span>
+      <span class="button" id="blue"></span>
+    </div>
+    <h1>
+      <span style="color: aliceblue">click to change color</span>
+    </h1>
+
+    <script src="script.js"></script>
+  </body>
+</html>
